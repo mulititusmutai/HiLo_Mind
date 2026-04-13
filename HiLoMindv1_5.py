@@ -1,4 +1,4 @@
-import pygame
+3import pygame
 import math
 import pymunk
 import numpy as np
@@ -163,7 +163,7 @@ def snap_to_cardinal(absolute_angle_deg: float):
             best      = label
     return best
 
-def read_wall_data(state: dict, mount_angles: list, open_threshold: float = 60.0) -> dict:
+def read_wall_data(state: dict, mount_angles: list, open_threshold: float = 50.0) -> dict:
     wall_status = {}
     for reading, mount in zip(state['readings'], mount_angles):
         dist, _conf = reading
